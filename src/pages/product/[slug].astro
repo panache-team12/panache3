@@ -34,8 +34,8 @@ console.log(product);
 </div>
   <div class="text-container">
       <h2>{product.Navn}</h2>
-      <p>{product.Winetype}</p>
-      <p class="Land">{product.Country}</p>
+      <p>{product.Wine type}</p>
+      <p class="Land">{product.Countr}</p>
       <p class="Year">{product.Year}</p>
       <p class="Info">{product.Info}</p>
       <p class="Pris">{product.Price}</p>
@@ -44,6 +44,8 @@ console.log(product);
 </MainLayout>
 
 <style>
+
+ 
   .line {
     width: 80%;
     height: 1px;
@@ -53,7 +55,7 @@ console.log(product);
 
   h1 {
     text-align: center;
-}
+  }
 
   h2 {
     color: #ab0000;
@@ -73,24 +75,24 @@ console.log(product);
   /* Container for bilde og tekst */
   .product-container {
     display: flex;
-    align-items: flex-start; 
-    gap: 20px; 
+    align-items: flex-start; /* Juster toppen av bildet og teksten */
+    gap: 20px; /* Avstand mellom bilde og tekst */
     padding: 1rem;
   }
 
   .image-container {
-    flex: 1; 
+    flex: 1; /* Bildet tar 1 del av tilgjengelig plass */
   }
 
   .image-container img {
-    width: 100%; 
-    max-width: 500px; 
+    width: 100%; /* Gjør bildet responsivt */
+    max-width: 500px; /* Begrens bredden til bildet */
     height: auto;
     display: block;
   }
 
   .text-container {
-    flex: 2; 
+    flex: 2; /* Tekstboksen tar 2 deler av plassen */
   }
  @media (max-width: 800px) {
   .image-container {

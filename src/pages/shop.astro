@@ -15,10 +15,10 @@ const data = await fetch(
 ).then((res) => res.json());
 
 // Sorter vinene basert på "Wine type"
-const sparklingWines = data.filter((wine) => wine["Winetype"]?.toLowerCase() === "sparkling");
-const orangeWines = data.filter((wine) => wine["Winetype"]?.toLowerCase() === "orange");
-const whiteWines = data.filter((wine) => wine["Winetype"]?.toLowerCase() === "white");
-const redWines = data.filter((wine) => wine["Winetype"]?.toLowerCase() === "red");
+const sparklingWines = data.filter((wine) => wine["Wine type"]?.toLowerCase() === "sparkling");
+const orangeWines = data.filter((wine) => wine["Wine type"]?.toLowerCase() === "orange");
+const whiteWines = data.filter((wine) => wine["Wine type"]?.toLowerCase() === "white");
+const redWines = data.filter((wine) => wine["Wine type"]?.toLowerCase() === "red");
 
 console.log({ sparklingWines, orangeWines, whiteWines, redWines });
 ---
@@ -90,3 +90,4 @@ console.log({ sparklingWines, orangeWines, whiteWines, redWines });
     }
   }
 </style>
+
